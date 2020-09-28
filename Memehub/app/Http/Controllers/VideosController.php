@@ -8,9 +8,8 @@ use Illuminate\Http\Request;
 class VideosController extends Controller
 {
     public function show(){
-
-        $items = \App\NewsItem::all();
-        return view('videos', ['newsitems' => $items]);
+        $videos = Videos::all();
+        return view('videos', ['videos' => $videos]);
     }
 
     public function upload(){
