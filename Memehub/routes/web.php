@@ -21,7 +21,3 @@ Route::get('/videos', 'App\Http\Controllers\VideosController@show')->name('video
 Route::get('/videos/upload', 'App\Http\Controllers\VideosController@upload')->name('videos.upload');
 Route::post('/videos', 'App\Http\Controllers\VideosController@store')->name('store.post');
 Route::get('/detail', 'App\Http\Controllers\DetailController@show')->name('detail');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');

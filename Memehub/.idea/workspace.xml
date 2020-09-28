@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="9dafa1e6-9f42-4d8c-a5d4-049900c3db42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Memehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Memehub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d8fd5f2-a211-4698-87b9-08e3e0964be7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d8fd5f2-a211-4698-87b9-08e3e0964be7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VideosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/videos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/videos.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,17 +136,6 @@
       <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
-      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
-      <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
-      <path value="$PROJECT_DIR$/vendor/jenssegers/agent" />
-      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
-      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
-      <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
-      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
-      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
-      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
-      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hrwBuU5TmY3wZCwMlIu5wjmpHN" />
@@ -214,10 +185,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600784936404" />
-    <state x="710" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601289535353">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="710" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601289535353" />
     <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601283010323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -226,9 +193,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601284094622" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601289372157">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600785116377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601289372157" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600785116377" />
   </component>
 </project>
