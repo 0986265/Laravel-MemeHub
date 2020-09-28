@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dafa1e6-9f42-4d8c-a5d4-049900c3db42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d8fd5f2-a211-4698-87b9-08e3e0964be7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d8fd5f2-a211-4698-87b9-08e3e0964be7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WatchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VideosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Videos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_28_091046_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_28_091046_create_videos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/watch.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/uploadvideo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/uploadvideo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/videos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/videos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +186,7 @@
       <workItem from="1600782411174" duration="1304000" />
       <workItem from="1600784490768" duration="1952000" />
       <workItem from="1601282025163" duration="5288000" />
+      <workItem from="1601308370935" duration="9865000" />
     </task>
     <servers />
   </component>
@@ -192,17 +198,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600784936404" />
-    <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601283010323">
+    <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601316239314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601283010323" />
+    <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601316239314" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601316264264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601316264264" />
+    <state x="472" y="88" key="CommitChangelistDialog2" timestamp="1601314553794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="472" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601314553794" />
+    <state x="850" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601320488996">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="850" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1601320488996" />
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601284094622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601284094622" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600785116377">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601318856885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600785116377" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601318856885" />
   </component>
 </project>

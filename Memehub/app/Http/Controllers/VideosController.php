@@ -25,6 +25,9 @@ class VideosController extends Controller
         ]);
 
         $video = new Videos();
+
+        $videoID = explode("=",$request->get('url'));
+        $video->urlid = $videoID[1];
         $video->title = $request->get('title');
         $video->url = $request->get('url');
 

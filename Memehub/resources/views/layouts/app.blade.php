@@ -65,6 +65,7 @@
                                         @csrf
                                     </form>
                                 </div>
+
                             </li>
                             <li>
                                 <a href="videos/upload">

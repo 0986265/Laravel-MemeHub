@@ -27,6 +27,7 @@ class Videos extends Model
 {
     use HasFactory;
     public $fillable = [
+        'urlid',
         'title',
         'url'
     ];
