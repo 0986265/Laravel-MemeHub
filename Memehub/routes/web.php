@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\VideosController@show')->name('home');
 
 Route::get('/videos', 'App\Http\Controllers\VideosController@show')->name('videos');
 Route::get('/videos/upload', 'App\Http\Controllers\VideosController@upload')->name('videos.upload');
 Route::post('/videos', 'App\Http\Controllers\VideosController@store')->name('store.post');
 Route::get('/detail', 'App\Http\Controllers\DetailController@show')->name('detail');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
