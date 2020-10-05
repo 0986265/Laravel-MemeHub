@@ -10,8 +10,19 @@ use Illuminate\Http\Request;
 class VideosController extends Controller
 {
     public function show(){
+        //Get all videos from database
         $videos = Videos::all();
-        return view('videos', ['videos' => $videos]);
+
+        //Select 6 videos to show on main page
+        $loadedvideos = array();
+
+        for ($n = 0; $n < 6; $n++) {
+            $r = rand(0, count($videos) - 1);
+            $loadedvideos[$n] = $videos[$r];
+        }
+
+
+        return view('videos', ['videos' => $loadedvideos]);
     }
 
     public function upload(){
