@@ -11,6 +11,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $title
  * @property string $url
+ * @property string $urlid
+ * @property string $category
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Videos newModelQuery()
@@ -29,6 +31,7 @@ class Videos extends Model
     public $fillable = [
         'urlid',
         'title',
-        'url'
+        'url',
+        'category'
     ];
 }

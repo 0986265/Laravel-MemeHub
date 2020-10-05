@@ -22,4 +22,5 @@ Route::get('/videos/watch', 'App\Http\Controllers\WatchController@show')->name('
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', 'App\Http\Controllers\VideosController@show')->name('home');
+Route::get('/admin', 'AdminController@admin')->middleware('is_admin')->name('admin');

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\video_categories;
 use App\Models\Videos;
 use Illuminate\Http\Request;
 
@@ -14,14 +16,16 @@ class VideosController extends Controller
 
     public function upload(){
 
-        return view('uploadvideo');
+        $categories = video_categories::all();
+        return view('uploadvideo', ['categories' => $categories]);
     }
 
     public function store(Request $request)
     {
         $request->validate([
             'title' => 'required',
-            'url' => 'required|active_url'
+            'url' => 'required|active_url',
+            'category' => 'required'
         ]);
 
         $video = new Videos();
@@ -30,6 +34,7 @@ class VideosController extends Controller
         $video->urlid = $videoID[1];
         $video->title = $request->get('title');
         $video->url = $request->get('url');
+        $video->category = $request->get('category');
 
         $video->save();
 
