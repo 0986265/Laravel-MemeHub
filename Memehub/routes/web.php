@@ -17,7 +17,8 @@ Route::get('/', 'App\Http\Controllers\VideosController@show')->name('home');
 
 Route::get('/videos', 'App\Http\Controllers\VideosController@show')->name('videos');
 Route::get('/videos/upload', 'App\Http\Controllers\VideosController@upload')->name('videos.upload');
-Route::post('/videos', 'App\Http\Controllers\VideosController@store')->name('store.post');
+
+Route::post('/videos/upload', 'App\Http\Controllers\VideosController@store')->name('store.post');
 Route::get('/videos/watch', 'App\Http\Controllers\WatchController@show')->name('watch');
 
 Route::post('/videos', 'App\Http\Controllers\VideosController@search')->name('videos.search');

@@ -28,14 +28,20 @@ class VideosController extends Controller
 
     public function search(Request $request){
         $searchterm = $request->get( 'searchterm' );
+        $catogory = $request->get( 'catogory' );
 
-        $videos = Videos::where('title','LIKE','%'.$searchterm.'%')->get();
+        if($catogory == 'All') {
+            $videos = Videos::where('title','LIKE','%'.$searchterm.'%')->get();
+        } else {
+            $videos = Videos::where('title','LIKE','%'.$searchterm.'%')->where('category','LIKE','%'.$catogory.'%')->get();
+        }
+
         $categories = video_categories::all();
 
         if(count($videos) > 0) {
             return view('videos', ['videos' => $videos],['categories' => $categories]);
         } else {
-            dd('ERROR');
+            return view('videos', ['videos' => $videos],['categories' => $categories])->withMessage();
         }
     }
 
