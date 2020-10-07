@@ -21,8 +21,22 @@ class VideosController extends Controller
             $loadedvideos[$n] = $videos[$r];
         }
 
+        $categories = video_categories::all();
 
-        return view('videos', ['videos' => $loadedvideos]);
+        return view('videos', ['videos' => $loadedvideos],['categories' => $categories]);
+    }
+
+    public function search(Request $request){
+        $searchterm = $request->get( 'searchterm' );
+
+        $videos = Videos::where('title','LIKE','%'.$searchterm.'%')->get();
+        $categories = video_categories::all();
+
+        if(count($videos) > 0) {
+            return view('videos', ['videos' => $videos],['categories' => $categories]);
+        } else {
+            dd('ERROR');
+        }
     }
 
     public function upload(){

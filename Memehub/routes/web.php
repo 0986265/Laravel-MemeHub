@@ -20,6 +20,8 @@ Route::get('/videos/upload', 'App\Http\Controllers\VideosController@upload')->na
 Route::post('/videos', 'App\Http\Controllers\VideosController@store')->name('store.post');
 Route::get('/videos/watch', 'App\Http\Controllers\WatchController@show')->name('watch');
 
+Route::post('/videos', 'App\Http\Controllers\VideosController@search')->name('videos.search');
+
 Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\VideosController@show')->name('home');

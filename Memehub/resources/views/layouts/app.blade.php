@@ -36,10 +36,6 @@
 
                     </ul>
 
-                    <ul class="navbar-nav mx-auto">
-                        <input type="text" placeholder="Search...">
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
