@@ -67,6 +67,10 @@
                                 </div>
 
                             </li>
+
+                            @if( Auth::user()->type == "admin" )
+                                <a class="nav-item nav-link" href="{{route('admin')}}">Admin</a>
+                            @endif
                             <li>
                                 <a href="videos/upload">
                                 <button type="button" class="btn btn-primary">Upload Meme</button>

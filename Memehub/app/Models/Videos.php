@@ -32,6 +32,7 @@ class Videos extends Model
         'urlid',
         'title',
         'url',
-        'category'
+        'category',
+        'status'
     ];
 }

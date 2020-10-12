@@ -23,6 +23,8 @@ Route::get('/videos/watch', 'App\Http\Controllers\WatchController@show')->name('
 
 Route::post('/videos', 'App\Http\Controllers\VideosController@search')->name('videos.search');
 
+Route::post('/admin/videostatus', 'App\Http\Controllers\AdminController@videostatus')->name('admin.videostatus');
+
 Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\VideosController@show')->name('home');

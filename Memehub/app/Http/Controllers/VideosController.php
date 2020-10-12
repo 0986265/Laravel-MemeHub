@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 class VideosController extends Controller
 {
     public function show(){
-        //Get all videos from database
-        $videos = Videos::all();
+        //Get all videos from database with status active
+        $videos = Videos::where('status','LIKE','active')->get();
 
         //Select 6 videos to show on main page
         $loadedvideos = array();
@@ -31,9 +31,9 @@ class VideosController extends Controller
         $catogory = $request->get( 'catogory' );
 
         if($catogory == 'All') {
-            $videos = Videos::where('title','LIKE','%'.$searchterm.'%')->get();
+            $videos = Videos::where('status','LIKE','active')->where('title','LIKE','%'.$searchterm.'%')->get();
         } else {
-            $videos = Videos::where('title','LIKE','%'.$searchterm.'%')->where('category','LIKE','%'.$catogory.'%')->get();
+            $videos = Videos::where('status','LIKE','active')->where('title','LIKE','%'.$searchterm.'%')->where('category','LIKE','%'.$catogory.'%')->get();
         }
 
         $categories = video_categories::all();
