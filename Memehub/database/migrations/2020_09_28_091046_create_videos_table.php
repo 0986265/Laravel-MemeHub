@@ -20,6 +20,8 @@ class CreateVideosTable extends Migration
             $table->text('url');
             $table->text('category');
             $table->text('status');
+            $table->text('user');
+            $table->integer('likes');
             $table->timestamps();
         });
     }

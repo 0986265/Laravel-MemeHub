@@ -13,6 +13,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $url
  * @property string $urlid
  * @property string $category
+ * @property string $status
+ * @property string $user
+ * @property int $likes
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Videos newModelQuery()
@@ -33,6 +36,8 @@ class Videos extends Model
         'title',
         'url',
         'category',
-        'status'
+        'status',
+        'user',
+        'likes'
     ];
 }

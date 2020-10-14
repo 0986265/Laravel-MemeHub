@@ -27,7 +27,7 @@
                             </form>
                         </td>
                     @endif
-                    <td class="text-xs-right"><p class="text-xs-right mt-2">DUIMPIE</p></td>
+                    <td><p class="mt-2">❤  {{$video['likes']}}</p></td>
                 @endguest
 
 

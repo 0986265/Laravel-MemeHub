@@ -51,6 +51,14 @@ class VideosController extends Controller
         return view('uploadvideo', ['categories' => $categories]);
     }
 
+    public function myuploads(){
+
+        $user = \Auth::id();
+
+        $uploads = Videos::where('user','LIKE', $user)->get();
+        return view('myuploads', ['uploads' => $uploads]);
+    }
+
     public function store(Request $request)
     {
         $request->validate([
@@ -66,6 +74,8 @@ class VideosController extends Controller
         $video->title = $request->get('title');
         $video->url = $request->get('url');
         $video->category = $request->get('category');
+        $video->status = 'active';
+        $video->user = \Auth::id();
 
         $video->save();
 

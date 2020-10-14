@@ -55,6 +55,10 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('myuploads') }}">
+                                        My Uploads
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -64,13 +68,18 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+
+
+
+                                    @if( Auth::user()->type == "admin" )
+                                        <hr>
+                                        <a class="dropdown-item" href="{{route('admin')}}">Admin</a>
+                                    @endif
                                 </div>
 
                             </li>
 
-                            @if( Auth::user()->type == "admin" )
-                                <a class="nav-item nav-link" href="{{route('admin')}}">Admin</a>
-                            @endif
+
                             <li>
                                 <a href="videos/upload">
                                 <button type="button" class="btn btn-primary">Upload Meme</button>

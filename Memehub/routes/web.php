@@ -21,6 +21,8 @@ Route::get('/videos/upload', 'App\Http\Controllers\VideosController@upload')->na
 Route::post('/videos/upload', 'App\Http\Controllers\VideosController@store')->name('store.post');
 Route::get('/videos/watch', 'App\Http\Controllers\WatchController@show')->name('watch');
 
+Route::get('/myuploads', 'App\Http\Controllers\VideosController@myuploads')->name('myuploads');
+
 Route::post('/videos', 'App\Http\Controllers\VideosController@search')->name('videos.search');
 
 Route::post('/admin/videostatus', 'App\Http\Controllers\AdminController@videostatus')->name('admin.videostatus');
