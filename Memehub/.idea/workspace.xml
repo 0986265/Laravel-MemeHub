@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dafa1e6-9f42-4d8c-a5d4-049900c3db42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/UserLikes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d8fd5f2-a211-4698-87b9-08e3e0964be7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d8fd5f2-a211-4698-87b9-08e3e0964be7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VideosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/videos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/videos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WatchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WatchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/watch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/watch.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +158,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Dashboard" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -187,7 +192,13 @@
       <workItem from="1601333426854" duration="200000" />
       <workItem from="1601384398002" duration="1141000" />
       <workItem from="1601882985129" duration="16208000" />
-      <workItem from="1602069966289" duration="7472000" />
+      <workItem from="1602069966289" duration="8072000" />
+      <workItem from="1602488129907" duration="8068000" />
+      <workItem from="1602671499918" duration="6743000" />
+      <workItem from="1603716613253" duration="3677000" />
+      <workItem from="1603878199397" duration="636000" />
+      <workItem from="1604139507692" duration="3138000" />
+      <workItem from="1604229782495" duration="1763000" />
     </task>
     <servers />
   </component>
@@ -199,18 +210,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600784936404" />
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603719934741">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603719934741" />
     <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601316239314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601316239314" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602071983808">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604230611432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602071983808" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604230611432" />
     <state x="472" y="88" key="CommitChangelistDialog2" timestamp="1601314553794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="472" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601314553794" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603878232629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603878232629" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1603719949409">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603719949409" />
     <state x="850" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601890897810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -219,9 +242,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601284094622" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602071830015">
+    <state x="0" y="0" width="1180" height="872" key="dock-window-1" timestamp="1603719700807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602071830015" />
+    <state x="0" y="0" width="1180" height="872" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603719700807" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1603719828265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603719828265" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604230961682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604230961682" />
   </component>
 </project>

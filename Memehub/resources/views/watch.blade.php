@@ -27,7 +27,15 @@
                             </form>
                         </td>
                     @endif
-                    <td><p class="mt-2">❤  {{$video['likes']}}</p></td>
+                    <form action="{{route('like')}}" method="post">
+                        @csrf
+                        <input type="hidden" name="id" value="{{$video['id']}}">
+                        @if($count >= 1)
+                            <td><button type="button" class="btn btn-danger">❤  {{$video['likes']}}</button></td>
+                        @else
+                            <td><button type="submit" class="btn btn-light">❤  {{$video['likes']}}</button></td>
+                        @endif
+                    </form>
                 @endguest
 
 

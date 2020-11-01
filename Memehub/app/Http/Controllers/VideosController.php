@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\UserLikes;
 use App\Models\video_categories;
 use App\Models\Videos;
 use Illuminate\Http\Request;
@@ -46,9 +47,14 @@ class VideosController extends Controller
     }
 
     public function upload(){
-
+        $userid = \Auth::id();
+        $count = count(UserLikes::where('userid', 'LIKE', $userid)->get());
         $categories = video_categories::all();
-        return view('uploadvideo', ['categories' => $categories]);
+        if($count >= 3) {
+            return view('uploadvideo', ['categories' => $categories]);
+        } else {
+            return view('error');
+        }
     }
 
     public function myuploads(){

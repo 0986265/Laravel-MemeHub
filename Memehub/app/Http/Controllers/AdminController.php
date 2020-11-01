@@ -35,6 +35,9 @@ class AdminController extends Controller
 
     public function admin()
     {
-        return view('admin');
+        $user = \Auth::id();
+
+        $uploads = Videos::all();
+        return view('admin', ['uploads' => $uploads]);
     }
 }
